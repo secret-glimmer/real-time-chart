@@ -1,0 +1,29 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    --toastify-toast-bd-radius: 0.25rem;
+    --toastify-font-family: Poppins;
+    --toastify-color-progress-light: #ffd52b !important;
+    --toastify-color-progress-dark: #ffd52b !important;
+}
+
+.Toastify__toast {
+    font-size: 0.875rem !important;
+}
+
+.react-grid-item.react-grid-placeholder {
+    background: gold;
+    border-radius: 0.5rem;
+}
+
+.react-resizable-hide .react-resizable-handle {
+    display: none !important;
+}
+
+#linked-particles canvas {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+}
