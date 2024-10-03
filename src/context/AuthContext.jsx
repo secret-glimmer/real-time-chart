@@ -6,6 +6,9 @@ import {RemoveAllPreferences} from "../hooks/useSavedPreferences.js";
 const supabaseUrl = 'https://urlznusnzjxlkusrpzpn.supabase.co';
 const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVybHpudXNuemp4bGt1c3JwenBuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM3MTY4OTYsImV4cCI6MjAzOTI5Mjg5Nn0.tLx4b5x3WXC_M-mICE5tbAxG_RemvyVsOJ2MEZ29p8A';
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+const redirectUrl = window.location.hostname === 'localhost'
+        ? 'http://localhost:5173'
+        : 'https://kinangh98.github.io/chart-hive/';
 
 const AuthContext = createContext({});
 export const useAuth = () => useContext(AuthContext);
@@ -68,6 +71,7 @@ export const AuthProvider = props =>
             username,
             userID,
             isLoading,
+            redirectUrl
         }),
         [username, userID, isLoading]
     );

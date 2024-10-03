@@ -19,7 +19,7 @@ export function LoginPage()
     const [isLoggingIn, setIsLoggingIn] = useState(false);
     const [captchaToken, setCaptchaToken] = useState();
     const turnstile = useTurnstile();
-    const {supabase} = useAuth();
+    const {supabase,redirectUrl} = useAuth();
     const {isDark} = useTheme();
 
     const handleLogin = async (e) =>
@@ -50,7 +50,7 @@ export function LoginPage()
                      initial={{opacity: 0}}
                      animate={{opacity: 1}}>
 
-            <img className='z-10 mx-auto dark:content-[url(/logo-dark.svg)]' src="/logo.svg" width='250'
+            <img className='z-10 mx-auto dark:content-[url(/logo-dark.svg)]' src="./logo.svg" width='250'
                  alt="company-logo"/>
 
             <h1 className='z-10 text-2xl text-center'>Log in</h1>
@@ -58,6 +58,9 @@ export function LoginPage()
             <div className='z-10 flex items-center justify-center gap-4'>
                 <ProviderButton icon={faGoogle} onClickHandler={() => supabase.auth.signInWithOAuth({
                     provider: 'google',
+                    options: {
+                        redirectTo: redirectUrl,
+                    },
                 })}/>
                 <ProviderButton icon={faFacebook}
                                 onClickHandler={() => toast('Facebook accounts will be supported soon.')}/>

@@ -10,7 +10,7 @@ import {useAuth} from "../context/AuthContext.jsx";
 
 export default function SignupPage()
 {
-    const {supabase} = useAuth();
+    const {supabase, redirectUrl} = useAuth();
 
     return (
         <motion.div
@@ -18,7 +18,7 @@ export default function SignupPage()
             initial={{opacity: 0}}
             animate={{opacity: 1}}>
 
-            <img className='z-10 mx-auto dark:content-[url(/logo-dark.svg)]' src="/logo.svg" width='250'
+            <img className='z-10 mx-auto dark:content-[url(/logo-dark.svg)]' src="./logo.svg" width='250'
                  alt="company-logo"/>
 
             <h1 className='z-10 text-2xl text-center'>Sign up</h1>
@@ -26,6 +26,9 @@ export default function SignupPage()
             <div className='z-10 flex items-center justify-center gap-4'>
                 <ProviderButton icon={faGoogle} onClickHandler={() => supabase.auth.signInWithOAuth({
                     provider: 'google',
+                    options: {
+                        redirectTo: redirectUrl,
+                    },
                 })}/>
                 <ProviderButton icon={faFacebook}
                                 onClickHandler={() => toast('Facebook accounts will be supported soon.')}/>
@@ -35,14 +38,15 @@ export default function SignupPage()
             <h4 className='z-10 text-center'>- or -</h4>
 
             <div className='z-10 flex flex-col gap-4'>
-                <Link to='/auth/signupWithEmail' className='text-black relative flex items-center justify-center bg-amber-400 hover:bg-amber-500 py-3 rounded font-medium transition-colors'>
+                <Link to='/auth/signupWithEmail'
+                      className='text-black relative flex items-center justify-center bg-amber-400 hover:bg-amber-500 py-3 rounded font-medium transition-colors'>
                     <span>Continue With Email</span>
                     <FontAwesomeIcon icon={faEnvelope} className='absolute right-4'/>
                 </Link>
                 <span className='text-sm'>Already have an account? <Link to='/auth/login'
                                                                          className='text-amber-800 dark:text-amber-400 font-medium'>Log in</Link></span>
                 <span className='text-xs'>By signing up, you agree to our <a
-                    className='font-medium text-amber-800 dark:text-amber-400' href="../../privacy-policy.html">Privacy Policy</a>.</span>
+                    className='font-medium text-amber-800 dark:text-amber-400' href="./privacy-policy.html">Privacy Policy</a>.</span>
             </div>
         </motion.div>
     );

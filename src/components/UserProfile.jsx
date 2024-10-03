@@ -19,7 +19,7 @@ export default function UserProfile()
                 <span
                     className='flex justify-between items-center gap-2 hover:bg-neutral-200 dark:hover:bg-neutral-600 cursor-pointer rounded py-2 px-3 z-50 relative'
                     onClick={() => setIsClicked((prev) => !prev)}>
-                    <img src="/user-profile-image.svg" width='40' alt="user-profile-image"/>
+                    <img src="./user-profile-image.svg" width='40' alt="user-profile-image"/>
                     <h3 className='grow text-center'>{username}</h3>
                     <FontAwesomeIcon icon={isClicked ? faAngleUp : faAngleDown}/>
                 </span>

@@ -7,6 +7,7 @@ import SignupPage from "./SignupPage.jsx";
 import {useTheme} from "../context/ThemeContext.jsx";
 import {useAuth} from "../context/AuthContext.jsx";
 import React, {useEffect} from "react";
+import SignupWithEmailPage from "./SignupWithEmailPage.jsx";
 
 function AuthPage()
 {
@@ -34,7 +35,7 @@ function AuthPage()
                     <Route index element={<LoginPage/>}/>
                     <Route path="login" element={<LoginPage/>}/>
                     <Route path="signup" element={<SignupPage/>}/>
-                    {/*<Route path="forgot-password" element={<ForgotPasswordPage/>}/>*/}
+                    <Route path="signupWithEmail" element={<SignupWithEmailPage/>}/>
                 </Routes>
 
                 {!isDesktop && <LinksParticles color={isDarkMode ? '#ad9459' : '#ffda83'}

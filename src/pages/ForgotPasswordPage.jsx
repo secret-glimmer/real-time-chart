@@ -13,7 +13,7 @@ export default function ForgotPasswordPage()
                      initial={{opacity: 0}}
                      animate={{opacity: 1}}>
 
-            <img className='z-10 mx-auto dark:content-[url(/logo-dark.svg)]' src="/logo.svg" width='250'
+            <img className='z-10 mx-auto dark:content-[url(./logo-dark.svg)]' src="./logo.svg" width='250'
                  alt="company-logo"/>
 
             <h1 className='z-10 text-2xl text-center'>Recover your password</h1>

@@ -13,11 +13,7 @@ function Dashboard()
     useEffect(() =>
     {
         // Re-direct to login page if the user is not authenticated.
-        if (!username)
-        {
-            console.log('User Name: ', username)
-            navigate('/auth/login')
-        }
+        if (!username) navigate('/auth/login')
 
     }, [username]);
 

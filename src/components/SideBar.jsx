@@ -54,7 +54,7 @@ function SideBar({isOpen, setIsOpen})
                     Sales
                 </h3>
 
-                <img src="/background-image.svg" alt="background-image"/>
+                <img src="./background-image.svg" alt="background-image"/>
 
                 <button
                     className='bg-amber-400 hover:bg-amber-500 text-black transition-colors p-2 px-8 rounded'>Upgrade

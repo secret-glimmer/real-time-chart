@@ -3,7 +3,7 @@
     return (
         <div
             className='bg-white dark:bg-neutral-700 h-16 flex py-10 lg:px-20 px-5 backdrop-blur bg-opacity-50 dark:bg-opacity-40 sticky top-0 z-20 items-center justify-between'>
-            <img src="/logo.svg" className='dark:content-[url(/logo-dark.svg)]' alt="chart-hive-logo" width='200px'/>
+            <img src="./logo.svg" className='dark:content-[url(/logo-dark.svg)]' alt="chart-hive-logo" width='200px'/>
 
             <button
                 className='lg:hidden w-12 aspect-square flex justify-center items-center rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors'

@@ -1,5 +1,7 @@
 # Chart Hive
 
+![Chart Hive](https://kinangh98.github.io/chart-hive/social-media-image.jpg)
+
 ## Overview
 
 The Chart Hive is a powerful web application that provides users with real-time metrics for their websites (mock data). Built using React and Supabase, this dashboard allows users to customize their chart layouts and preferences, providing a personalized experience.

@@ -64,7 +64,8 @@ export default function SignupWithEmailPage()
                      animate={{opacity: 1}}>
 
             <Link to='/auth/signup' className='absolute left-3 top-3 text-sm'><FontAwesomeIcon icon={faArrowLeft}/> Back</Link>
-            <img className='z-10 mx-auto dark:content-[url(/logo-dark.svg)]' src="/logo.svg" width='250'
+            
+            <img className='z-10 mx-auto dark:content-[url(/logo-dark.svg)]' src="./logo.svg" width='250'
                  alt="company-logo"/>
 
             <h1 className='z-10 text-2xl text-center'>Sign up</h1>
@@ -90,7 +91,7 @@ export default function SignupWithEmailPage()
                 <span className='text-sm'>Already have an account? <Link to='/auth/login'
                                                                          className='text-amber-800 dark:text-amber-400 font-medium'>Log in</Link></span>
                 <span className='text-xs'>By signing up, you agree to our <a
-                    className='font-medium text-amber-800 dark:text-amber-400' href="../../privacy-policy.html">Privacy Policy</a>.</span>
+                    className='font-medium text-amber-800 dark:text-amber-400' href="./privacy-policy.html">Privacy Policy</a>.</span>
             </div>
         </motion.form>
     );
