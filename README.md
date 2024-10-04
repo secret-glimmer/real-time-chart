@@ -26,6 +26,10 @@ Chart Hive is a powerful web application that provides users with real-time metr
 - **Framer Motion**
 - **FontAwesome**
 
+## Server
+
+You can check the source code of the server behind this app here: [Chart Hive API](https://github.com/KinanGH98/chart-hive-server)
+
 ## Contact
 For any inquiries or feedback, feel free to reach out at [kinangh98@gmail.com](mailto:kinangh98@gmail.com).
 
