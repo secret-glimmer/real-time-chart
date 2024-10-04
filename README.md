@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Chart Hive is a powerful web application that provides users with real-time metrics for their websites (mock data). Built using React and Supabase, this dashboard allows users to customize their chart layouts and preferences, providing a personalized experience.
+Chart Hive is a powerful web application that provides users with real-time metrics for their websites (mock data). Built using React and Supabase, this dashboard allows users to customize their chart layouts and preferences, providing a personalized experience.
 
 ## Features
 
@@ -27,7 +27,7 @@ The Chart Hive is a powerful web application that provides users with real-time 
 - **FontAwesome**
 
 ## Contact
-For any inquiries or feedback, feel free to reach out at kinangh98@gmail.com.
+For any inquiries or feedback, feel free to reach out at [kinangh98@gmail.com](mailto:kinangh98@gmail.com).
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you have any suggestions or improvements.
