@@ -31,7 +31,7 @@ Chart Hive is a powerful web application that provides users with real-time metr
 You can check the source code of the server behind this app here: [Chart Hive API](https://github.com/KinanGH98/chart-hive-server)
 
 ## Contact
-For any inquiries or feedback, feel free to reach out at [kinangh98@gmail.com](mailto:kinangh98@gmail.com).
+For any inquiries or feedback, feel free to reach out at [joykeeper1028@gmail.com](mailto:joykeeper1028@gmail.com).
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you have any suggestions or improvements.
